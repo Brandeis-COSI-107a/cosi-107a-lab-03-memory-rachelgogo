@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
 
         int low_bits = number & 0xFF; // Extract the lowest 8 bits
 
-        printf("%2d 0x%02X %3d\n", i, low_bits, low_bits);
+        printf("%d 0x%02X %3d\n", i, low_bits, low_bits);
     }
 
     return 0;
