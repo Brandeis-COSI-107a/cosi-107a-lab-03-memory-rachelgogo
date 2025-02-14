@@ -8,11 +8,6 @@ int main(int argc, char *argv[]) {
         char *endptr;
         int64_t number = strtoll(argv[i], &endptr, 0); // Convert input to signed 64-bit integer
 
-        if (*endptr != '\0') { 
-            fprintf(stderr, "Invalid input: %s\n", argv[i]);
-            continue;
-        }
-
         // Extract byte 1 (next lower byte) by shifting right 8 bits and masking with 0xFF
         int byte1 = (number >> 8) & 0xFF;
 
